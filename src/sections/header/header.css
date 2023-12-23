@@ -24,7 +24,7 @@ header > div:first-child span {
   font-size: 1.5rem;
 }
 
-.hamburger{
+.hamburger {
   border: none;
   background-color: #f5f4f0;
   border-radius: 100%;
@@ -36,7 +36,7 @@ header > nav {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  position: fixed; 
+  position: fixed;
   background-color: #7c151a;
   width: 100%;
   height: 100vh;
@@ -49,7 +49,7 @@ header > nav {
   transition: all 1s ease;
 }
 
-header > nav div{
+header > nav div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +68,7 @@ header > div:last-child {
   margin: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
-header > div:last-child > div {
+header > div:last-child > div > div {
   position: relative;
   height: 80vh;
   margin-bottom: 0.5rem;
@@ -79,7 +79,7 @@ header > div:last-child > div {
   flex-direction: column;
 }
 
-header > div:last-child > div::before {
+header > div:last-child > div:last-child > div::before {
   content: "";
   border-radius: 1rem;
   background-image: url("/public/images/model.jpg");
@@ -97,7 +97,7 @@ header > div:last-child > div::before {
   z-index: -1;
 }
 
-header > div:last-child > div h1 {
+header > div:last-child > div > div h1 {
   font-size: 2.25rem;
   font-weight: 700;
 }
@@ -119,10 +119,145 @@ header > div:last-child > div > div button {
   border-radius: 1rem;
 }
 
-header > div:last-child > img {
+header > div:last-child > div > img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 1rem;
   filter: brightness(65%);
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger,
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header > div:first-child {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+
+  header > div:first-child nav a {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+
+  header > div:first-child > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  header > div:first-child > div > div:first-child {
+    border-radius: 1.25rem;
+    border: 1px solid #000;
+    padding: 0.5rem 0rem 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  header > div:first-child > div > div:first-child input {
+    border: none;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    font-size: 0.9375rem;
+    font-weight: 300;
+  }
+
+  header > div:first-child > div > div:first-child input:focus {
+    outline: none;
+  }
+
+  header > div:last-child {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100vh;
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  header > div:last-child > div:first-child {
+    width: 100%;
+    position: relative;
+  }
+
+  header > div:last-child > div:first-child > div {
+    background-image: none;
+    position: absolute;
+    right: 9.4375rem;
+    top: 16.0625rem;
+    height: auto;
+    padding: 3.2rem 1.5rem;
+    border-radius: 100%;
+    background-color: rgba(53, 53, 53, 0.22);
+    border: 1px white solid;
+    transform: rotate(-15deg);
+    cursor: pointer;
+  }
+
+  header > div:last-child > div:first-child > div > span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  header > div:last-child > div:first-child > img:first-child {
+    height: 100vh;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    filter: brightness(85%);
+  }
+
+  header > div:last-child > div:last-child {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  header > div:last-child > div:last-child > div {
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 1rem;
+  }
+
+  header > div:last-child > div:last-child > div::before {
+    background-image: none;
+  }
+
+  header > div:last-child > div:last-child > div h1 {
+    font-size: 4rem;
+  }
+
+  header > div:last-child > div:last-child > div p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header > div:last-child > img:first-child {
+    width: 100%;
+  }
 }
