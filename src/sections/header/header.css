@@ -66,6 +66,8 @@ header > nav a {
 
 header > div:last-child {
   margin: 1rem 0.5rem 0.5rem 0.5rem;
+  border-bottom: 1px black solid;
+  padding-bottom: 1rem;
 }
 
 header > div:last-child > div > div {
@@ -222,7 +224,7 @@ header > div:last-child > div > img {
   }
 
   header > div:last-child > div:first-child > img:first-child {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border-radius: 1rem;
     object-fit: cover;
