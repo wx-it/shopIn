@@ -20,7 +20,7 @@ const Header = () => {
         <span
           // className="mobile"
           style={{
-            color: open ? "white" : "black",
+            color: open ? "#F5F4F0" : "black",
             fontSize: open ? "2rem" : "1.5rem",
             paddingLeft: open ? "1rem" : ".5rem",
             paddingTop: open ? "1rem" : ".5rem",
