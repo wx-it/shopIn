@@ -90,5 +90,11 @@
     margin-right: auto;
     width: 175px;
     text-align: center;
+    color: black;
+  }
+
+  .seasons div > div:hover p{
+    color: #F5F4F0;
+    transition: all 1s ease;
   }
 }

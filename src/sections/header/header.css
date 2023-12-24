@@ -67,7 +67,7 @@ header > nav a {
 header > div:last-child {
   margin: 1rem 0.5rem 0.5rem 0.5rem;
   border-bottom: 1px black solid;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 header > div:last-child > div > div {
@@ -145,6 +145,7 @@ header > div:last-child > div > img {
 
   header {
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   header > div:first-child {
