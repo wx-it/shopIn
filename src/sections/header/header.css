@@ -84,7 +84,7 @@ header > div:last-child > div > div {
 header > div:last-child > div:last-child > div::before {
   content: "";
   border-radius: 1rem;
-  background-image: url("/public/images/model.jpg");
+  background-image: url("/public/images/herosection.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(65%);
@@ -99,8 +99,13 @@ header > div:last-child > div:last-child > div::before {
   z-index: -1;
 }
 
-header > div:last-child > div > div h1 {
+.title div {
+  overflow-y: hidden;
+}
+
+.title h1 {
   font-size: 2.25rem;
+  margin: 0;
   font-weight: 700;
 }
 
@@ -145,6 +150,8 @@ header > div:last-child > div > img {
 
   header {
     width: 100%;
+    height: 100vh;
+
     margin-bottom: 2rem;
   }
 
@@ -218,6 +225,11 @@ header > div:last-child > div > img {
     cursor: pointer;
   }
 
+  header > div:last-child > div:first-child > div:hover {
+    transform: rotate(0deg);
+    transition: all .5s ease;
+  }
+  
   header > div:last-child > div:first-child > div > span {
     color: #fff;
     font-size: 1rem;
@@ -225,15 +237,15 @@ header > div:last-child > div > img {
   }
 
   header > div:last-child > div:first-child > img:first-child {
-    height: 100%;
+    height: 90%;
     width: 100%;
     border-radius: 1rem;
     object-fit: cover;
-    filter: brightness(85%);
+    filter: brightness(65%);
   }
 
   header > div:last-child > div:last-child {
-    height: 100%;
+    height: 90%;
     display: flex;
     align-items: stretch;
     justify-content: stretch;
