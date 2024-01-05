@@ -10,6 +10,11 @@ body {
   background-color: #f5f4f0;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
 @media screen and (min-width: 800px) {
   .wrapper {
     scroll-snap-type: y mandatory;
@@ -21,8 +26,9 @@ body {
   header,
   .seasons,
   .description {
-    /* position: sticky;
-        top: 0; */
+  /* position: sticky;
+    top: 0; */
     scroll-snap-align: start;
   }
 }
+

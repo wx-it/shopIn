@@ -4,16 +4,45 @@ import { motion } from "framer-motion";
 const Seasons = () => {
   return (
     <section className="seasons">
-      <motion.h2
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.25, ease: "linear" }}
-      >
-        ELEVATING COMFORT WITH EVERY CURVE
-      </motion.h2>
       <div>
         <div>
-          <img src="/images/model.jpg" alt="" />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, ease: "linear" }}
+          >
+            ELEVATING COMFORT WITH EVERY CURVE
+          </motion.h2>
+          <motion.button
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "linear" }}
+            className="desktop"
+          >
+            Explore more
+          </motion.button>
+        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "linear" }}
+          className="desktop"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+        </motion.p>
+      </div>
+      <div>
+        <div>
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/model.jpg"
+            alt=""
+          />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +52,13 @@ const Seasons = () => {
           </motion.p>
         </div>
         <div>
-          <img src="/images/model.jpg" alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/model.jpg"
+            alt=""
+          />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +68,13 @@ const Seasons = () => {
           </motion.p>
         </div>
         <div>
-          <img src="/images/model.jpg" alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/model.jpg"
+            alt=""
+          />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +84,13 @@ const Seasons = () => {
           </motion.p>
         </div>
         <div>
-          <img src="/images/model.jpg" alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/model.jpg"
+            alt=""
+          />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

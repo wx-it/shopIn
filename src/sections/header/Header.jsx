@@ -3,31 +3,53 @@ import Hamburger from "hamburger-react";
 import "./header.css";
 import { useState, useRef, useLayoutEffect } from "react";
 import { motion } from "framer-motion";
- import gsap from "gsap";
- import { ScrollTrigger } from "gsap/ScrollTrigger";
- gsap.registerPlugin(ScrollTrigger);
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  const ref = useRef();
-   useLayoutEffect(() => {
-     const el = ref.current;
-     gsap.fromTo(
-       el,
-       { y: 20 },
-       {
-         y: 0,
-         duration: 1,
-         markers: true,
-         start: "top bottom",
-         end: "top 400px",
-         scrollTrigger: {
-           trigger: el,
-         },
-       }
-     );
-   }, []);
+  const ref = [useRef(), useRef(), useRef()];
+  useLayoutEffect(() => {
+    ref.forEach((section) => {
+      const elems = section.current;
+      gsap.set(elems, {
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out",
+        overwrite: "auto",
+      });
+
+      ScrollTrigger.create({
+        trigger: section.current,
+        start: "top 60%",
+        end: "bottom 20%",
+        onEnter: () =>
+          gsap.to(elems, {
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+          }),
+        onLeave: () =>
+          gsap.to(elems, {
+            y: -50,
+            stagger: 0.2,
+          }),
+        onEnterBack: () =>
+          gsap.to(elems, {
+            y: 0,
+            opacity: 1,
+            stagger: -0.2,
+          }),
+        onLeaveBack: () =>
+          gsap.to(elems, {
+            y: 50,
+            stagger: -0.2,
+          }),
+      });
+    });
+  }, []);
 
   return (
     <header>
@@ -107,34 +129,34 @@ const Header = () => {
           <div>
             <div className="title">
               <div>
-                <motion.h1
-                ref={ref} 
-                  initial={{ y: 60 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 1.5, ease: "linear" }}
+                <h1
+                  ref={ref[0]}
+                  // initial={{ y: 60 }}
+                  // animate={{ y: 0 }}
+                  // transition={{ duration: 1.5, ease: "linear" }}
                 >
                   Each Piece is
-                </motion.h1>
+                </h1>
               </div>
               <div>
-                <motion.h1
-                ref={ref} 
-                  initial={{ y: 60 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 1.5, ease: "linear" }}
+                <h1
+                  ref={ref[1]}
+                  // initial={{ y: 60 }}
+                  // animate={{ y: 0 }}
+                  // transition={{ duration: 1.5, ease: "linear" }}
                 >
                   Designed to Move
-                </motion.h1>
+                </h1>
               </div>
               <div>
-                <motion.h1
-                ref={ref} 
-                  initial={{ y: 60 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 1.5, ease: "linear" }}
+                <h1
+                  ref={ref[2]}
+                  // initial={{ y: 60 }}
+                  // animate={{ y: 0 }}
+                  // transition={{ duration: 1.5, ease: "linear" }}
                 >
                   with You
-                </motion.h1>
+                </h1>
               </div>
             </div>
             <div>
