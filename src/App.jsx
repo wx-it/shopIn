@@ -4,6 +4,7 @@ import Seasons from "./sections/seasons/Seasons";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Collection from "./sections/collection/Collection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <Seasons />
       <Description />
+      <Collection />
     </div>
   );
 }

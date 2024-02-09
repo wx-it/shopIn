@@ -37,8 +37,8 @@ const Seasons = () => {
       <div>
         <div>
           <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -53,8 +53,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -69,8 +69,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -85,8 +85,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
