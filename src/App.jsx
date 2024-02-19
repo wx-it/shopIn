@@ -5,6 +5,7 @@ import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Collection from "./sections/collection/Collection";
+import Footer from "./sections/footer/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Seasons />
       <Description />
       <Collection />
+      <Footer />
     </div>
   );
 }

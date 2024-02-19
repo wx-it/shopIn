@@ -1,0 +1,82 @@
+footer{
+  max-height: 100%;
+  padding: 1rem;
+}
+
+.footer {
+  max-height: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+.footer h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer > div:first-child{
+  border-bottom: 1px white solid;
+  padding-bottom: 1rem;
+}
+
+.footer .icon.fa-icon {
+  border: 1px white solid;
+  padding: 10px;
+  font-size: 60px;
+  border-radius: 1rem;
+  margin-right:  5px;
+}
+
+.footer p{
+  font-size: 15px;
+  line-height: 165.8%;
+  letter-spacing: 3%;
+  border-bottom: 1px white solid !important;
+  padding-bottom: 1rem;
+}
+
+.footer > div:last-child > div{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.footer > div:last-child > div > a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+
+@media screen and (min-width: 800px){
+  .footer{
+    padding: 3rem;
+  }
+
+  .footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer > div:first-child h3{
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .footer > div:last-child > p{
+    max-width: 40%;
+    border: none !important;
+  }
+
+  .footer > div:last-child > div{
+    padding: 2rem 5rem;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
