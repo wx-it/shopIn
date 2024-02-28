@@ -29,24 +29,25 @@ const Header = () => {
           gsap.to(elems, {
             y: 0,
             opacity: 1,
-            stagger: 0.2,
+            stagger: .2,
+            duration: 2
           }),
-        onLeave: () =>
-          gsap.to(elems, {
-            y: -50,
-            stagger: 0.2,
-          }),
-        onEnterBack: () =>
-          gsap.to(elems, {
-            y: 0,
-            opacity: 1,
-            stagger: -0.2,
-          }),
-        onLeaveBack: () =>
-          gsap.to(elems, {
-            y: 50,
-            stagger: -0.2,
-          }),
+        // onLeave: () =>
+        //   gsap.to(elems, {
+        //     y: -10,
+        //     stagger: 0.2,
+        //   }),
+        // onEnterBack: () =>
+        //   gsap.to(elems, {
+        //     y: 0,
+        //     opacity: 1,
+        //     stagger: -0.2,
+        //   }),
+        // onLeaveBack: () =>
+        //   gsap.to(elems, {
+        //     y: 10,
+        //     stagger: -0.2,
+        //   }),
       });
     });
   }, []);
