@@ -26,7 +26,6 @@ const Seasons = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "linear" }}
-          className="desktop"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class
@@ -37,8 +36,8 @@ const Seasons = () => {
       <div>
         <div>
           <motion.img
-            initial={{ y: 100 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -53,8 +52,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ y: 100 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -69,8 +68,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ y: 100 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
@@ -85,8 +84,8 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
-            initial={{ y: 100 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/model.jpg"
             alt=""
