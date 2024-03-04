@@ -30,14 +30,14 @@ const Collection = () => {
     <div ref={component} className="collection">
       <div className="fixed">
         <motion.h2
-         initial={{ y: 50 }}
-         whileInView={{ y: 0 }}
-         transition={{ duration: 1, ease: "linear" }}
+          initial={{ y: 50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1, ease: "linear" }}
         >
           our new collection is here!
         </motion.h2>
       </div>
-     <ImageSlider slider={slider} />
+      <ImageSlider slider={slider} />
     </div>
   );
 };

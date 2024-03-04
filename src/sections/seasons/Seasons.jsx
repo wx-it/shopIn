@@ -39,7 +39,7 @@ const Seasons = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
-            src="/images/model.jpg"
+            src="/images/winter.jpg"
             alt=""
           />
           <motion.p
@@ -55,7 +55,7 @@ const Seasons = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
-            src="/images/model.jpg"
+            src="/images/summer.jpg"
             alt=""
           />
           <motion.p
@@ -71,7 +71,7 @@ const Seasons = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
-            src="/images/model.jpg"
+            src="/images/fall.jpg"
             alt=""
           />
           <motion.p
@@ -87,7 +87,7 @@ const Seasons = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
-            src="/images/model.jpg"
+            src="/images/spring.jpg"
             alt=""
           />
           <motion.p

@@ -15,7 +15,7 @@
   margin: 10px 1rem;
 }
 
-.seasons > div:first-child p{
+.seasons > div:first-child p {
   padding: 0 1rem;
 }
 
@@ -59,16 +59,11 @@
     margin-top: 1rem;
   }
 
-  .seasons > div:first-child > div{
+  .seasons > div:first-child > div {
     height: 100%;
   }
 
   .seasons > div:first-child > div h2 {
-    /* position: absolute;
-    right: 0;
-    top: 2rem;
-    z-index: 2; */
-    /* color: #fff; */
     font-size: 3rem;
     font-weight: 400;
     width: 36.1875rem;
@@ -117,13 +112,7 @@
     height: 100%;
     width: 100%;
     border-radius: 1rem;
-    /* transform: translateY(100%); */
   }
-
-  /* .seasons div:last-child > div:hover img {
-    transform: translateY(0%);
-    transition: all 0.8s ease;
-  } */
 
   .seasons div:last-child > div > p {
     left: 0;
@@ -134,9 +123,4 @@
     text-align: center;
     color: white;
   }
-
-  /* .seasons div:last-child > div:hover p{
-    color: #F5F4F0;
-    transition: all 1s ease;
-  } */
 }

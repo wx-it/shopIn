@@ -29,8 +29,8 @@ const Header = () => {
           gsap.to(elems, {
             y: 0,
             opacity: 1,
-            stagger: .2,
-            duration: 2
+            stagger: 0.2,
+            duration: 2,
           }),
         // onLeave: () =>
         //   gsap.to(elems, {
@@ -120,7 +120,14 @@ const Header = () => {
 
       <div>
         <div className="desktop">
-          <img className="desktop" src="/images/herosection.jpg" alt="" />
+          <motion.img
+            initial={{ opacity: 0.5, scale: 0.75 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "linear" }}
+            className="desktop"
+            src="/images/herosection.jpg"
+            alt=""
+          />
           <motion.div>
             <motion.span>Shop Now</motion.span>
           </motion.div>
@@ -174,7 +181,7 @@ const Header = () => {
               <motion.button className="mobile">Shop Now</motion.button>
             </div>
           </div>
-          <img src="/images/herosection.jpg" alt="" />
+          <img src="/images/herosection2.jpg" alt="" />
         </div>
       </div>
     </header>
