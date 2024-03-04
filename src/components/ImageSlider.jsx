@@ -1,10 +1,10 @@
 const ImageSlider = ({ slider }) => {
   return (
     <div ref={slider} className="slider">
-      <img src="/images/col1.jpg" alt="" className="panel" />
-      <img src="/images/col2.jpg" alt="" className="panel" />
-      <img src="/images/col3.jpg" alt="" className="panel" />
-      <img src="/images/col4.jpg" alt="" className="panel" />
+      <img src="/images/col1.webp" alt="" className="panel" />
+      <img src="/images/col2.webp" alt="" className="panel" />
+      <img src="/images/col3.webp" alt="" className="panel" />
+      <img src="/images/col4.webp" alt="" className="panel" />
 
     </div>
   );

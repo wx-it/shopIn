@@ -17,7 +17,7 @@ const Description = () => {
             WHO ARE WE ?
           </motion.h2>
         </div>
-        <img className="mobile" src="/images/model.jpg" alt="" />
+        <img className="mobile" src="/images/description.webp" alt="" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class
@@ -40,7 +40,7 @@ const Description = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.75, ease: "linear" }}
         className="desktop"
-        src="/images/description.jpg"
+        src="/images/description.webp"
         alt=""
       />
     </div>

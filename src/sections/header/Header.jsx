@@ -32,22 +32,6 @@ const Header = () => {
             stagger: 0.2,
             duration: 2,
           }),
-        // onLeave: () =>
-        //   gsap.to(elems, {
-        //     y: -10,
-        //     stagger: 0.2,
-        //   }),
-        // onEnterBack: () =>
-        //   gsap.to(elems, {
-        //     y: 0,
-        //     opacity: 1,
-        //     stagger: -0.2,
-        //   }),
-        // onLeaveBack: () =>
-        //   gsap.to(elems, {
-        //     y: 10,
-        //     stagger: -0.2,
-        //   }),
       });
     });
   }, []);
@@ -125,7 +109,7 @@ const Header = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             className="desktop"
-            src="/images/herosection.jpg"
+            src="/images/herosection.webp"
             alt=""
           />
           <motion.div>
@@ -137,34 +121,13 @@ const Header = () => {
           <div>
             <div className="title">
               <div>
-                <h1
-                  ref={ref[0]}
-                  // initial={{ y: 60 }}
-                  // animate={{ y: 0 }}
-                  // transition={{ duration: 1.5, ease: "linear" }}
-                >
-                  Each Piece is
-                </h1>
+                <h1 ref={ref[0]}>Each Piece is</h1>
               </div>
               <div>
-                <h1
-                  ref={ref[1]}
-                  // initial={{ y: 60 }}
-                  // animate={{ y: 0 }}
-                  // transition={{ duration: 1.5, ease: "linear" }}
-                >
-                  Designed to Move
-                </h1>
+                <h1 ref={ref[1]}>Designed to Move</h1>
               </div>
               <div>
-                <h1
-                  ref={ref[2]}
-                  // initial={{ y: 60 }}
-                  // animate={{ y: 0 }}
-                  // transition={{ duration: 1.5, ease: "linear" }}
-                >
-                  with You
-                </h1>
+                <h1 ref={ref[2]}>with You</h1>
               </div>
             </div>
             <div>
@@ -181,7 +144,7 @@ const Header = () => {
               <motion.button className="mobile">Shop Now</motion.button>
             </div>
           </div>
-          <img src="/images/herosection2.jpg" alt="" />
+          <img src="/images/herosection2.webp" alt="" />
         </div>
       </div>
     </header>
