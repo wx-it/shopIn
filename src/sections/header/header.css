@@ -84,7 +84,7 @@ header > div:last-child > div > div {
 header > div:last-child > div:last-child > div::before {
   content: "";
   border-radius: 1rem;
-  background-image: url("/public/images/herosection.jpg");
+  background-image: url("/public/images/herosection.webp");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(65%);
