@@ -35,14 +35,7 @@ const Description = () => {
         </p>
       </div>
 
-      <motion.img
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.75, ease: "linear" }}
-        className="desktop"
-        src="/images/description.webp"
-        alt=""
-      />
+      <img className="desktop" src="/images/description.webp" alt="" />
     </div>
   );
 };

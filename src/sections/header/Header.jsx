@@ -118,6 +118,7 @@ const Header = () => {
         </div>
 
         <div>
+          <img className="mobile" src="/images/herosection.webp" alt="" />
           <div>
             <div className="title">
               <div>
