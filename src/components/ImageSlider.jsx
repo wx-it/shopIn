@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const ImageSlider = ({ slider }) => {
   return (
     <div ref={slider} className="slider">
