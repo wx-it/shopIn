@@ -118,7 +118,7 @@ const Header = () => {
         </div>
 
         <div>
-          <img className="mobile" src="/images/herosectionmobile.webp" alt="" />
+          <img className="mobile" src="/images/mobile/herosectionmobile.webp" alt="" />
           <div>
             <div className="title">
               <div>

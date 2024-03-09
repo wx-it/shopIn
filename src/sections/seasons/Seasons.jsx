@@ -36,10 +36,20 @@ const Seasons = () => {
       <div>
         <div>
           <motion.img
+            className="desktop"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/winter.webp"
+            alt=""
+          />
+
+          <motion.img
+            className="mobile"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/mobile/winter.webp"
             alt=""
           />
           <motion.p
@@ -52,10 +62,20 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
+            className="desktop"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/summer.webp"
+            alt=""
+          />
+
+          <motion.img
+            className="mobile"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/mobile/summer.webp"
             alt=""
           />
           <motion.p
@@ -68,10 +88,20 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
+            className="desktop"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/fall.webp"
+            alt=""
+          />
+
+          <motion.img
+            className="mobile"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/mobile/fall.webp"
             alt=""
           />
           <motion.p
@@ -84,10 +114,20 @@ const Seasons = () => {
         </div>
         <div>
           <motion.img
+            className="desktop"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "linear" }}
             src="/images/spring.webp"
+            alt=""
+          />
+
+          <motion.img
+            className="mobile"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "linear" }}
+            src="/images/mobile/spring.webp"
             alt=""
           />
           <motion.p

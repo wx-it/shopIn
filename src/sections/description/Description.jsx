@@ -17,7 +17,7 @@ const Description = () => {
             WHO ARE WE ?
           </motion.h2>
         </div>
-        <img className="mobile" src="/images/description.webp" alt="" />
+        <img className="mobile" src="/images/mobile/description.webp" alt="" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class
