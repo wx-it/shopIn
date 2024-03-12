@@ -10,9 +10,13 @@ const Description = () => {
       <div>
         <div>
           <motion.h2
-            initial={{ y: 50 }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: 1, ease: "linear" }}
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{
+                 type: "spring",
+                 stiffness: 50,
+                 restDelta: 0.001,
+               }}
           >
             WHO ARE WE ?
           </motion.h2>

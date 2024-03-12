@@ -7,25 +7,39 @@ const Seasons = () => {
       <div>
         <div>
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, ease: "linear" }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              restDelta: 0.001,
+            }}
           >
             ELEVATING COMFORT WITH EVERY CURVE
           </motion.h2>
           <motion.button
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "linear" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              delay: 0.5,
+              restDelta: 0.001,
+            }}
             className="desktop"
           >
             Explore more
           </motion.button>
         </div>
         <motion.p
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "linear" }}
+          transition={{
+            type: "spring",
+            stiffness: 50,
+            delay: 0.75,
+            restDelta: 0.001,
+          }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class

@@ -105,9 +105,13 @@ const Header = () => {
       <div>
         <div className="desktop">
           <motion.img
-            initial={{ opacity: 0.5, scale: 0.75 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "linear" }}
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              restDelta: 0.001,
+            }}
             className="desktop"
             src="/images/herosection.webp"
             alt=""
@@ -118,7 +122,11 @@ const Header = () => {
         </div>
 
         <div>
-          <img className="mobile" src="/images/mobile/herosectionmobile.webp" alt="" />
+          <img
+            className="mobile"
+            src="/images/mobile/herosectionmobile.webp"
+            alt=""
+          />
           <div>
             <div className="title">
               <div>
@@ -133,9 +141,14 @@ const Header = () => {
             </div>
             <div>
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5, ease: "linear" }}
+                transition={{
+                  type: "spring",
+                  delay: 0.5,
+                  stiffness: 50,
+                  restDelta: 0.001,
+                }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum fermentum risus ac neque feugiat, vel tincidunt nulla
@@ -145,7 +158,17 @@ const Header = () => {
               <motion.button className="mobile">Shop Now</motion.button>
             </div>
           </div>
-          <img src="/images/herosection2.webp" alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              restDelta: 0.001,
+            }}
+            src="/images/herosection2.webp"
+            alt=""
+          />
         </div>
       </div>
     </header>
