@@ -141,7 +141,7 @@ const Header = () => {
             </div>
             <div>
               <motion.p
-                initial={{ opacity: 0, y: 200 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
